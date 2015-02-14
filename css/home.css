@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Aller";
+  src: url(../fonts/Aller/Aller_Lt.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Aller";
+  src: url(../fonts/Aller/Aller_Rg.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aller";
+  src: url(../fonts/Aller/Aller_Bd.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "STHeiti";
+  src: url(../fonts/STHeiti/STHeiti_Md.ttf);
+  font-weight: 100;
+}
+
+body {
+  font-family: "Aller", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 970px;
+}
+
+/* Header */
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar.navbar-inverse {
+  height: 46px;
+  overflow: hidden;
+  background: rgb(36,36,36);
+  margin-bottom: 0;
+}
+.navbar.navbar-inverse a.navbar-brand,
+.navbar.navbar-inverse a.navbar-brand:hover {
+  font-size: 26px;
+  color: #57c5a0;
+  font-family: "STHeiti", "Aller";
+  font-weight: 100;
+  margin-left: -30px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+@media all and (max-width: 1000px) {
+  .navbar.navbar-inverse a.navbar-brand,
+  .navbar.navbar-inverse a.navbar-brand:hover {
+    margin-left: -15px;
+  }
+}
+
+.navbar-inverse .navbar-right li {
+  border-right: 1px solid rgba(255,255,255,.15);
+  padding: 19px 25px;
+  color: #7e7e7e;
+  font-size: 11px;
+  cursor: default;
+}
+
+.navbar-inverse .navbar-right li a {
+  color: #7e7e7e;
+}
+
+.navbar-inverse .navbar-right li i {
+  font-size: 14px;
+  margin: 0;
+  cursor: text;
+}
+
+.navbar-inverse .navbar-right input {
+  background: none;
+  border: 0 none;
+  border-bottom: 1px solid #7e7e7e;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+  width: 0;
+  font-size: 11px;
+  opacity: 0;
+  margin-right: -3px;
+  margin-left: 0;
+}
+
+.navbar-inverse .navbar-right input:focus {
+  width: 160px;
+  opacity: 1;
+  margin-right: 0;
+}
+
+/* Menu */
+
+.navbar.navbar-default {
+  background-color: #fff;
+  margin-bottom: 0;
+  border-bottom: 0 none;
+}
+
+.navbar-default .navbar-left li a,
+.navbar-default .navbar-right li a {
+  padding: 24px 22px;
+  color: #000;
+  border-right: 1px solid #eee;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-left li:first-child a,
+.navbar-default .navbar-right li:first-child a {
+  border-left: 1px solid #eee;
+}
+
+.navbar-default .navbar-right li a,
+.navbar-default .navbar-right li a:hover,
+.navbar-default .navbar-right li:first-child a {
+  border-color: rgba(0,0,0,.2);
+  color: #6e6e6e;
+  padding: 24px;
+}
+
+.navbar-default .navbar-left li a:hover {
+  color: rgba(0,0,0,.7);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #fff;
+  color: #6e6e6e;
+}
+
+.nav-count {
+  background-color: #adadad;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 3px 0;
+  border-radius: 4px;
+  display: block;
+  float: right;
+  font-weight: 700;
+  margin-left: 8px;
+}
+a:hover .nav-count,
+.active a .nav-count {
+  background-color: #57c5a0;
+}
+
+/* Top */
+
+.top {
+  background: repeat-x scroll url(../img/top_bg.png);
+  height: 460px;
+}
+
+.price {
+  width: 68px;
+  height: 68px;
+  padding: 25px 0;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #57c5a0;
+  font-weight: 700;
+}
+
+.top .navbar-nav {
+  margin-left: 0;
+}
+
+.top .col-md-6:last-child {
+  padding-top: 70px;
+  padding-left: 40px;
+}
+
+.top-name {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.top-description {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.top ul.nav li a {
+  background-color: #fff;
+  padding: 11px 13px;
+  color: #6e6e6e;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.top ul.nav li a:hover {
+  background-color: #fff;
+  color: #57c5a0;
+}
+
+.top-nav {
+  background: #2e2e2e;
+}
+
+.strip {
+  background: #000;
+  padding: 2px 4px;
+  height: 10px;
+  position: relative;
+}
+
+.marker {
+  margin-left: 19.75%;
+  width: .25%;
+  height: 6px;
+  background-color: #2e2e2e;
+  float: left;
+}
