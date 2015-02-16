@@ -209,11 +209,20 @@ a:hover .nav-count,
   color: #6e6e6e;
   margin-right: 2px;
   font-size: 16px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
 }
 
-.top ul.nav li a:hover {
+.top ul.nav li a:hover,
+.top ul.nav li.green a {
   background-color: #fff;
   color: #57c5a0;
+}
+
+.top ul.nav li.green a:hover {
+  background-color: #57c5a0;
+  color: #fff;
 }
 
 .top-nav {
@@ -292,4 +301,58 @@ a:hover .nav-count,
 
 .top-nav .nav li.active p {
   color: #adadad;
+}
+
+/* Specials */
+
+.specials {
+  padding: 25px 0;
+  background-color: #242424;
+}
+
+.specials .col-md-4 div {
+  position: relative;
+  cursor: pointer;
+}
+
+.specials img {
+  width: 100%;
+  height: 100%;
+}
+
+.specials span {
+  position: absolute;
+  width: 180px;
+  font-weight: 100;
+  padding: 15px 0;
+  font-size: 25px;
+  text-align: center;
+  background-color: rgba(36,36,36,.9);
+  top: 65px;
+  left: 57px;
+  color: #fff;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.specials span.big {
+  width: 230px;
+  left: 32px;
+}
+
+.specials .col-md-4 div:hover span {
+  background-color: rgba(36,36,36,.8);
+}
+
+/* Catalog */
+
+.catalog {
+  background-color: #ebe7df;
+}
+
+.catalog h2 {
+  font-weight: 100;
+  font-size: 25px;
+  color: #242424;
 }
