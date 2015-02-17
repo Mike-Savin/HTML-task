@@ -17,6 +17,13 @@
 }
 
 @font-face {
+  font-family: "Aller";
+  src: url(../fonts/Aller/Aller_It.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "STHeiti";
   src: url(../fonts/STHeiti/STHeiti_Md.ttf);
   font-weight: 100;
@@ -28,7 +35,7 @@ body {
   min-width: 970px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, button:focus {
   outline: 0 none;
 }
 
@@ -554,4 +561,169 @@ a:hover .nav-count,
 
 .pre-footer {
   background: #242424;
+  font-size: 12px;
+  height: 246px;
+}
+
+.pre-footer .container > .row {
+  margin: 0 16px;
+}
+
+.pre-footer .container > .row > .col-md-4 {
+  padding: 0 26px;
+}
+
+.pre-footer h3 {
+  color: #6b6b6b;
+  font-size: 14px;
+  margin: 50px 0 20px;
+}
+
+.pre-footer p {
+  color: #939393;
+  text-align: justify;
+  margin-bottom: 7px;
+  font-style: italic;
+}
+
+.pre-footer span {
+  color: #c4c5cf;
+  display: block;
+  margin-bottom: 11px;
+  font-style: italic;
+}
+
+.pre-footer a {
+  color: #57c5a0;
+}
+
+.pre-footer .col-md-4 .row {
+  margin: 0 -4px;
+}
+
+.pre-footer .col-md-4 .row .col-md-4 {
+  padding: 0 4px 9px;
+}
+
+.pre-footer img {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.pre-footer img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Email and social buttons */
+
+.email-and-socials {
+  background: #242424;
+  border-top: 1px solid #1c1c1c;
+  height: 118px;
+  padding-top: 37px;
+}
+
+.email-and-socials .row
+{
+  margin: 0 44px;
+}
+
+.email-and-socials input {
+  background: #2e2e2e;
+  border: 0 none;
+  margin: 0;
+  color: #ccc;
+  float: left;
+  height: 36px;
+  width: 214px;
+  padding: 0 14px;
+}
+
+.email-and-socials button {
+  background: #7d7d7d;
+  border: 0 none;
+  margin: 0;
+  color: #2e2e2e;
+  float: left;
+  height: 36px;
+  padding: 9px 11px;
+  width: 36px;
+}
+
+.email-and-socials form button i {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.email-and-socials form:hover button i {
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  transform: translateX(3px);
+}
+
+.email-and-socials .nav {
+  margin: 0;
+}
+
+.email-and-socials .nav a {
+  width: 36px;
+  height: 36px;
+  margin-left: 8px;
+  background: #2e2e2e;
+  color: #7d7d7d;
+  font-size: 18px;
+  padding: 9px 11px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+footer {
+  background: #2e2e2e;
+  color: #979797;
+  font-size: 12px;
+  padding: 28px 0 35px;
+}
+
+footer .row {
+  margin: 0;
+}
+
+footer p,
+footer .nav {
+  margin: 0;
+}
+
+footer p {
+
+}
+
+footer .nav {
+  cursor: default;
+  margin-top: 10px;
+}
+
+footer .nav li a {
+  padding: 0;
+  float: left;
+  margin: 0 4px;
+  color: #979797;
+  line-height: 17px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+footer .nav li:last-child a {
+  margin-right: 0;
+}
+
+footer .nav li a:hover {
+  background: none;
+  color: #bbb;
 }
