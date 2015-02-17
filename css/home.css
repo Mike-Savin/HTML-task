@@ -369,7 +369,7 @@ a:hover .nav-count,
   padding-bottom: 10px;
 }
 
-.catalog h2 {
+.catalog .container > h2 {
   font-weight: 100;
   font-size: 25px;
   color: #242424;
@@ -420,19 +420,20 @@ a:hover .nav-count,
 }
 
 .item-bottom p {
-  top: 10px;
+  top: 11px;
   left: 93px;
   position: absolute;
   font-size: 18px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
+  z-index: 2;
 }
 
 .item-bottom .nav {
   position: absolute;
   left: 115px;
-  top: 80px;
+  top: 13px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
@@ -440,13 +441,15 @@ a:hover .nav-count,
 }
 
 .item:hover .item-bottom p {
-  top: 80px;
+  top: 21px;
   opacity: 0;
+  z-index: 0;
 }
 
 .item:hover .item-bottom .nav {
   top: 3px;
   opacity: 1;
+  z-index: 2;
 }
 
 .item .price {
@@ -469,4 +472,86 @@ a:hover .nav-count,
 
 .item .sale.two-strings {
   padding: 17px 0;
+}
+
+/* News */
+
+.catalog .line {
+  border-top: 1px solid #bcb5a7;
+  margin-top: 37px;
+}
+
+.catalog .row:last-child {
+  padding-top: 26px;
+}
+
+.catalog .row .col-md-3 > div,
+.catalog .row .col-md-6 > div {
+  background: #dfdbd4;
+  padding: 30px 15px;
+  height: 185px;
+}
+
+.catalog .row:last-child h3 {
+  margin: 0 0 11px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.catalog .row:last-child p {
+  font-size: 12px;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 7px;
+  margin-left: 2px;
+  font-style: italic;
+}
+
+.feed-element {
+  clear: both;
+  overflow: hidden;
+  padding-top: 8px;
+  margin-bottom: 6px;
+}
+
+.feed-date {
+  float: left;
+  background-color: #57c5a0;
+  width: 36px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 0;
+  line-height: 11px;
+}
+
+.feed-date span {
+  font-size: 13px;
+  display: block;
+}
+
+.feed-text {
+  float: right;
+  width: 379px;
+  color: #242424;
+}
+
+.feed-text h4 {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.feed-element p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Pre footer */
+
+.pre-footer {
+  background: #242424;
 }
