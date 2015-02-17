@@ -641,6 +641,7 @@ a:hover .nav-count,
   height: 36px;
   width: 214px;
   padding: 0 14px;
+  font-style: italic;
 }
 
 .email-and-socials button {
